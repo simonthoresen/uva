@@ -13,7 +13,10 @@ public class Main {
         throw new UnsupportedOperationException();
     }
 
-    public static void assertOutput(Class problemClass, String input, String expected) throws Exception {
+    @SuppressWarnings("unchecked")
+    public static void assertOutput(String input, String expected) throws Exception {
+        String className = new Throwable().getStackTrace()[1].getClassName();
+        Class problemClass = Class.forName(className.substring(0, className.indexOf('$')));
         ByteArrayOutputStream out = new ByteArrayOutputStream();
         problemClass.getConstructor(InputStream.class, PrintStream.class)
                     .newInstance(new ByteArrayInputStream(input.getBytes(UTF8)),

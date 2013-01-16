@@ -30,8 +30,7 @@ public class Problem11650 {
 
         @org.junit.Test
         public void requireThatOutputMatches() throws Exception {
-            Main.assertOutput(Problem11650.class,
-                              "27\n" +
+            Main.assertOutput("27\n" +
                               "11:59\n" +
                               "06:29\n" +
                               "01:15\n" +

@@ -62,8 +62,7 @@ public class Problem305 {
 
         @org.junit.Test
         public void requireThatOutputMatches() throws Exception {
-            Main.assertOutput(Problem305.class,
-                              "3\n" +
+            Main.assertOutput("3\n" +
                               "4\n" +
                               "0",
                               "5\n" +
