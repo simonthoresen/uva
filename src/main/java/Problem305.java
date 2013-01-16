@@ -8,10 +8,10 @@ public class Problem305 {
 
     private static int[] M = { 0, 2, 7, 5, 30, 169, 441, 1872, 7632, 1740, 93313, 459901, 1358657, 2504881 };
 
-    public Problem305(InputStream in, PrintStream out) {
-        Scanner scanner = new Scanner(in);
+    public Problem305(InputStream ins, PrintStream out) {
+        Scanner in = new Scanner(ins);
         while (true) {
-            int k = scanner.nextInt();
+            int k = in.nextInt();
             if (k == 0) {
                 break;
             }

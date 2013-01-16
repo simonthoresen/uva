@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Problem11650 {
 
-    public Problem11650(InputStream in, PrintStream out) {
-        Scanner scanner = new Scanner(in);
-        int T = scanner.nextInt();
+    public Problem11650(InputStream ins, PrintStream out) {
+        Scanner in = new Scanner(ins);
+        int T = in.nextInt();
         for (int t = 0; t < T; ++t) {
-            String str = scanner.next();
+            String str = in.next();
             int hour = Integer.valueOf(str.substring(0, 2));
             if (hour == 12) {
                 hour = 0;

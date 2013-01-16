@@ -4,15 +4,15 @@ import java.util.Scanner;
 
 public class Problem11764 {
 
-    public Problem11764(InputStream in, PrintStream out) {
-        Scanner scanner = new Scanner(in);
-        int T = scanner.nextInt();
+    public Problem11764(InputStream ins, PrintStream out) {
+        Scanner in = new Scanner(ins);
+        int T = in.nextInt();
         for (int t = 1; t <= T; ++t) {
-            int N = scanner.nextInt();
-            int prev = scanner.nextInt();
+            int N = in.nextInt();
+            int prev = in.nextInt();
             int numHigh = 0, numLow = 0;
             for (int n = 1; n < N; ++n) {
-                int next = scanner.nextInt();
+                int next = in.nextInt();
                 if (prev < next) {
                     ++numHigh;
                 } else if (prev > next) {
